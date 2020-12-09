@@ -4,12 +4,15 @@ import org.springframework.cloud.netflix.eureka.server.event.EurekaInstanceCance
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author zhangaiwen
+ */
 @Component
 public class CustomEvent {
-	
-	@EventListener
-	public void listen(EurekaInstanceCanceledEvent e) {
-		System.out.println(e.getServerId()+"下线事件");
-		//发送邮件，短信，电话。
-	}
+
+    @EventListener
+    public void listen(EurekaInstanceCanceledEvent e) {
+        System.out.println(e.getServerId() + "下线事件");
+        //发送邮件，短信，电话。
+    }
 }

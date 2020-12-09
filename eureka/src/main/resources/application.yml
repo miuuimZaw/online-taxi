@@ -1,28 +1,30 @@
 #单节点
 #应用名称及验证账号
-spring: 
-  application: 
+spring:
+  application:
     name: eureka
-  security: 
-    user: 
+  security:
+    user:
       name: root
       password: root
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-  server: 
+  server:
     #关闭自我保护
     enable-self-preservation: false
     #清理间隔时间
     eviction-interval-timer-in-ms: 5000
-logging:  level:    root: info
+logging:
+  level:
+    root: info
 ---
 spring:
   profiles: 7900
-server: 
+server:
   port: 7900
 eureka:
   client:
-    service-url:                      
+    service-url:
       defaultZone: http://root:root@localhost:7900/eureka/

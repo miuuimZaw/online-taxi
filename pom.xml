@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <packaging>pom</packaging>
+    <groupId>com.online.taxi</groupId>
+    <artifactId>online-taxi</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>online-taxi-common</module>
+        <module>eureka</module> <!-- 注册中心 -->
+        <module>api-driver-ribbon</module>
+        <module>api-passenger-feign</module>
+        <module>api-passenger-feign-custom</module>
+        <module>api-driver</module>
+        <module>api-passenger</module>
+        <module>service-sms</module>
+        <module>alibaba-seata</module>
+        <module>api-listen-order</module>
+        <module>cloud-admin</module>
+        <module>config-client</module>
+        <module>config-client-diy</module>
+        <module>hystrix-dashboard</module>
+        <module>online-taxi-config-server</module>
+        <module>online-taxi-gateway</module>
+        <module>online-taxi-zuul</module>
+        <module>service-app-update</module>
+        <module>service-jms-consumer</module>
+        <module>service-jms-produce</module>
+        <module>service-order</module>
+        <module>service-order-dispatch</module>
+        <module>service-passenger-user</module>
+        <module>service-valuation</module>
+        <module>service-verification-code</module>
+        <module>service-wallet</module>
+        <module>study-bus</module>
+        <module>study-hystrix</module>
+        <module>hystrix-dashboard</module>
+    </modules>
+
+</project>
